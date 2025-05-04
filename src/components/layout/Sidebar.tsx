@@ -137,9 +137,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
               </Link>
             </div>
 
-            <div className='py-6 mx-3 text-center text-gray-600 border-t border-gray-200'>
+            <div className='py-6 text-center text-gray-600 border-t border-gray-200'>
               <p className='text-xs'>Copyright &copy; 2025 LearnTube</p>
-              <p className='text-xs mt-2'>Made with ❤️ by <Link href="https://adityasharma.vercel.app" target="_blank" className='text-gray-800 hover:text-black hover:underline'>Aditya Sharma</Link></p>
+              <p className='text-xs mt-2 font-medium'>Made with ❤️ by <Link href="https://adityasharma.vercel.app" target="_blank" className='text-gray-800 hover:text-black hover:underline'>Aditya Sharma</Link></p>
             </div>
           </nav>
         </div>

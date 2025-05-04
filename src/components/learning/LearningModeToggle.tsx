@@ -11,7 +11,7 @@ const LearningModeToggle: React.FC<LearningModeToggleProps> = ({ className = '' 
   return (
     <button
       onClick={toggleLearningMode}
-      className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
+      className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all cursor-pointer ${
         isLearningMode 
           ? 'bg-indigo-600 text-white hover:bg-indigo-700' 
           : 'bg-white border border-gray-300 hover:bg-gray-100'

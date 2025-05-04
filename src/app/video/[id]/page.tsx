@@ -137,14 +137,14 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
                   <h3 className="font-medium text-sm">{video.channelName}</h3>
                   <p className="text-xs text-gray-500">320K subscribers</p>
                 </div>
-                <button className="ml-4 bg-black text-white px-4 py-2 rounded-full text-sm font-medium">
+                <button className="ml-4 bg-black text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer">
                   Subscribe
                 </button>
               </div>
 
-              <div className="flex items-center mt-3 sm:mt-0 space-x-2">
+              <div className="flex items-center mt-3 sm:mt-0 space-x-2 flex-wrap gap-2">
                 <div className="flex items-center bg-gray-100 rounded-full overflow-hidden">
-                  <button className="flex items-center px-4 py-2 hover:bg-gray-200">
+                  <button className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
                     <svg
                       className="w-5 h-5 mr-2"
                       viewBox="0 0 24 24"
@@ -155,7 +155,7 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
                     <span>{video.likes}</span>
                   </button>
                   <div className="w-px h-8 bg-gray-300"></div>
-                  <button className="flex items-center px-4 py-2 hover:bg-gray-200">
+                  <button className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
                     <svg
                       className="w-5 h-5 mr-2 transform rotate-180"
                       viewBox="0 0 24 24"
@@ -167,7 +167,7 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
                   </button>
                 </div>
 
-                <button className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:bg-gray-200">
+                <button className="flex items-center bg-gray-100 cursor-pointer px-4 py-2 rounded-full hover:bg-gray-200">
                   <svg
                     className="w-5 h-5 mr-2"
                     viewBox="0 0 24 24"
@@ -178,7 +178,7 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
                   <span>Share</span>
                 </button>
 
-                <button className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:bg-gray-200">
+                <button className="flex items-center bg-gray-100 cursor-pointer px-4 py-2 rounded-full hover:bg-gray-200">
                   <svg
                     className="w-5 h-5 mr-2"
                     viewBox="0 0 24 24"
