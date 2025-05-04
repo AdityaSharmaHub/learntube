@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, use } from 'react';
 import { videos } from "@/data/videos";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -11,8 +11,8 @@ import ChapterMarkers from "@/components/learning/ChapterMarkers";
 import QuizPanel from "@/components/learning/QuizPanel";
 import NotesPanel from "@/components/learning/NotesPanel";
 
-export default function VideoPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default function VideoPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const video = videos.find((v) => v.id === id);
   const { isLearningMode } = useLayout();
   const [currentTime, setCurrentTime] = useState(0);

@@ -2,9 +2,9 @@ import { videos } from "@/data/videos";
 import VideoCard from "@/components/video/VideoCard";
 import Image from "next/image";
 
-export default async function ChannelPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function ChannelPage({ params }: { params: { id: string } }) {
 
+  const { id } = params
   // Get channel info - in a real app this would come from an API or data file
   const channels = [
     { id: "1", name: "Code With Mosh", image: "/avatars/channel1.jpg", subscribers: "1.2M" },
