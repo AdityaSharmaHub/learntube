@@ -39,6 +39,46 @@ const Sidebar: React.FC = () => {
           </div>
 
           <div className="border-t border-gray-200 pt-2 mb-2">
+            <h3 className="px-3 pt-1 pb-2 text-sm font-medium">Explore</h3>
+            <Link href="/trending" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
+                <path clipRule="evenodd" d="m14 2-1.5.886-5.195 3.07C4.637 7.533 3 10.401 3 13.5c0 4.694 3.806 8.5 8.5 8.5s8.5-3.806 8.5-8.5V1l-1.5 1-3 2L14 5V2ZM8.068 7.248l4.432-2.62v3.175l2.332-1.555L18.5 3.803V13.5c0 3.866-3.134 7-7 7s-7-3.134-7-7c0-2.568 1.357-4.946 3.568-6.252ZM9 15c0-1.226.693-2.346 1.789-2.894L15 10v5c0 1.657-1.343 3-3 3s-3-1.343-3-3Z" fillRule="evenodd"></path>
+              </svg>
+              <span className="text-sm">Trending</span>
+            </Link>
+            <Link href="/music" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
+                <path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7zM9 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-12h-5V5h5v2z"></path>
+              </svg>
+              <span className="text-sm">Music</span>
+            </Link>
+            <Link href="/gaming" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
+                <path d="M10 12H8v2H6v-2H4v-2h2V8h2v2h2v2zm7 .5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm3-3c0-.83-.67-1.5-1.5-1.5S17 8.67 17 9.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm-3.03-4.35l-4.5 2.53-.49.27-.49-.27-4.5-2.53L3 7.39v6.43l8.98 5.04 8.98-5.04V7.39l-3.99-2.24m0-1.15l4.99 2.8v7.6L11.98 20 2 14.4V6.8L6.99 4l4.99 2.8L16.97 4z"></path>
+              </svg>
+              <span className="text-sm">Gaming</span>
+            </Link>
+          </div>
+
+          <div className="border-t border-gray-200 pt-2 mb-2">
+            <h3 className="px-3 pt-1 pb-2 text-sm font-medium">Subscriptions</h3>
+            {channels.map((channel) => (
+              <Link key={channel.id} href={`/channel/${channel.id}`} className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
+                <div className="w-6 h-6 rounded-full mr-6 overflow-hidden relative flex-shrink-0">
+                  <Image 
+                    src={channel.image} 
+                    alt={channel.name}
+                    width={24}
+                    height={24}
+                    className="object-cover"
+                  />
+                </div>
+                <span className="text-sm truncate">{channel.name}</span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="border-t border-gray-200 pt-2 mb-2">
             <Link href="/library" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
               <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
                 <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"></path>
@@ -68,46 +108,6 @@ const Sidebar: React.FC = () => {
                 <path d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z"></path>
               </svg>
               <span className="text-sm">Liked videos</span>
-            </Link>
-          </div>
-
-          <div className="border-t border-gray-200 pt-2 mb-2">
-            <h3 className="px-3 pt-1 pb-2 text-sm font-medium">Subscriptions</h3>
-            {channels.map((channel) => (
-              <Link key={channel.id} href={`/channel/${channel.id}`} className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
-                <div className="w-6 h-6 rounded-full mr-6 overflow-hidden relative flex-shrink-0">
-                  <Image 
-                    src={channel.image} 
-                    alt={channel.name}
-                    width={24}
-                    height={24}
-                    className="object-cover"
-                  />
-                </div>
-                <span className="text-sm truncate">{channel.name}</span>
-              </Link>
-            ))}
-          </div>
-
-          <div className="border-t border-gray-200 pt-2 mb-2">
-            <h3 className="px-3 pt-1 pb-2 text-sm font-medium">Explore</h3>
-            <Link href="/trending" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
-                <path clipRule="evenodd" d="m14 2-1.5.886-5.195 3.07C4.637 7.533 3 10.401 3 13.5c0 4.694 3.806 8.5 8.5 8.5s8.5-3.806 8.5-8.5V1l-1.5 1-3 2L14 5V2ZM8.068 7.248l4.432-2.62v3.175l2.332-1.555L18.5 3.803V13.5c0 3.866-3.134 7-7 7s-7-3.134-7-7c0-2.568 1.357-4.946 3.568-6.252ZM9 15c0-1.226.693-2.346 1.789-2.894L15 10v5c0 1.657-1.343 3-3 3s-3-1.343-3-3Z" fillRule="evenodd"></path>
-              </svg>
-              <span className="text-sm">Trending</span>
-            </Link>
-            <Link href="/music" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
-                <path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7zM9 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-12h-5V5h5v2z"></path>
-              </svg>
-              <span className="text-sm">Music</span>
-            </Link>
-            <Link href="/gaming" className="flex items-center px-3 py-2 rounded-lg hover:bg-gray-100">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 mr-6">
-                <path d="M10 12H8v2H6v-2H4v-2h2V8h2v2h2v2zm7 .5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm3-3c0-.83-.67-1.5-1.5-1.5S17 8.67 17 9.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm-3.03-4.35l-4.5 2.53-.49.27-.49-.27-4.5-2.53L3 7.39v6.43l8.98 5.04 8.98-5.04V7.39l-3.99-2.24m0-1.15l4.99 2.8v7.6L11.98 20 2 14.4V6.8L6.99 4l4.99 2.8L16.97 4z"></path>
-              </svg>
-              <span className="text-sm">Gaming</span>
             </Link>
           </div>
 
