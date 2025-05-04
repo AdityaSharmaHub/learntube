@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradmern-stack" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A8A" />
+        <stop offset="100%" stop-color="#3B82F6" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradmern-stack)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="1170.4419307135643" cy="474.079002367766" r="37.81431658546609" fill="white" /><circle cx="777.0838993141592" cy="472.4236983862839" r="51.75591800562914" fill="white" /><circle cx="966.8595905419676" cy="395.6363145913623" r="41.29268682887107" fill="white" /><circle cx="690.0349822847471" cy="4.229548452585714" r="48.19347209200912" fill="white" /><circle cx="800.5020115558182" cy="237.17720158916433" r="97.57236527146489" fill="white" /><circle cx="509.2304669131667" cy="711.7967644585921" r="94.93011918083077" fill="white" /><circle cx="289.06420410506286" cy="489.15093764289935" r="74.03531286203183" fill="white" /><circle cx="1163.6578236366765" cy="269.06067832305524" r="80.5672212971277" fill="white" /><circle cx="908.0404924642926" cy="146.72904265663857" r="77.35005580665324" fill="white" /><circle cx="350.7650408378194" cy="255.2764036667929" r="30.15023457350523" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">MERN Stack Crash Course</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">MERN Stack Crash Course</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M24 10.8V8l-2.3-.8c-.1-.5-.3-.9-.5-1.3l.9-2.1-2-2-.9.9c-.4-.2-.8-.4-1.3-.5L17 0h-2.8l-.8 2.3c-.5.1-.9.3-1.3.5l-2.1-.9-2 2 .9 2.1c-.2.4-.4.8-.5 1.3L8 8v2.8l2.3.8c.1.5.3.9.5 1.3l-.9 2.1 2 2 2.1-.9c.4.2.8.4 1.3.5l.8 2.3h2.8l.8-2.3c.5-.1.9-.3 1.3-.5l2.1.9 2-2-.9-2.1c.2-.4.4-.8.5-1.3l2.3-.8zm-8 1.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M24 10.8V8l-2.3-.8c-.1-.5-.3-.9-.5-1.3l.9-2.1-2-2-.9.9c-.4-.2-.8-.4-1.3-.5L17 0h-2.8l-.8 2.3c-.5.1-.9.3-1.3.5l-2.1-.9-2 2 .9 2.1c-.2.4-.4.8-.5 1.3L8 8v2.8l2.3.8c.1.5.3.9.5 1.3l-.9 2.1 2 2 2.1-.9c.4.2.8.4 1.3.5l.8 2.3h2.8l.8-2.3c.5-.1.9-.3 1.3-.5l2.1.9 2-2-.9-2.1c.2-.4.4-.8.5-1.3l2.3-.8zm-8 1.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" fill="#1E3A8A"/>
+    </g>
+  </svg>

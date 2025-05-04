@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradcss-grid" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#9D174D" />
+        <stop offset="100%" stop-color="#EC4899" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradcss-grid)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="353.18827796240015" cy="468.11432541296654" r="25.882701352325412" fill="white" /><circle cx="795.3119156799903" cy="357.62883702657024" r="87.78801175945078" fill="white" /><circle cx="444.86297561659484" cy="540.3248048023236" r="82.39098903775215" fill="white" /><circle cx="1041.5977239118045" cy="366.4903093699055" r="21.87232344919323" fill="white" /><circle cx="562.5510464717083" cy="357.3389319749209" r="45.182613101030086" fill="white" /><circle cx="542.4864601507713" cy="554.8998620685578" r="89.07247022653291" fill="white" /><circle cx="918.3336925104805" cy="121.4009218589584" r="59.8279561084566" fill="white" /><circle cx="1174.046134106193" cy="565.479900922778" r="46.526283887552026" fill="white" /><circle cx="118.90144954180528" cy="314.6635587111028" r="77.63589621664252" fill="white" /><circle cx="692.7274114032891" cy="96.26435845475415" r="96.43657073976354" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">CSS Grid Tutorial</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">CSS Grid Tutorial</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M16.61 15.15c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83m-9.22 0c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83m9.22-9.22c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2m-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M16.61 15.15c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83m-9.22 0c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83m9.22-9.22c-.46 0-.83-.37-.83-.83v-1.4c0-.46.37-.83.83-.83s.83.37.83.83v1.4c0 .46-.37.83-.83.83M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2m-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1z" fill="#9D174D"/>
+    </g>
+  </svg>

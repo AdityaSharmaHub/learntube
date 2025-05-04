@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradnodejs-api" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#166534" />
+        <stop offset="100%" stop-color="#22C55E" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradnodejs-api)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="1221.232932925085" cy="527.1390512326269" r="60.13884362355638" fill="white" /><circle cx="687.5683132547554" cy="271.70034127893496" r="66.75093160994257" fill="white" /><circle cx="248.429835251236" cy="84.63409942371104" r="76.04047406177534" fill="white" /><circle cx="524.2457232507265" cy="46.15200203173386" r="38.794825247786534" fill="white" /><circle cx="1106.0667332888333" cy="306.3004206793215" r="40.652465365219484" fill="white" /><circle cx="1219.9616795784473" cy="130.31232467524939" r="43.91319815746526" fill="white" /><circle cx="517.8617890233672" cy="206.75225701963552" r="30.369186969463602" fill="white" /><circle cx="354.39730542810906" cy="665.995978232721" r="75.43601137705099" fill="white" /><circle cx="181.46033876498365" cy="158.67508021881633" r="54.51165625124151" fill="white" /><circle cx="1128.5818050483047" cy="103.3119680917669" r="85.26001057961287" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">Build a REST API with Node.js</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">Build a REST API with Node.js</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="#166534"/>
+    </g>
+  </svg>

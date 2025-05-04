@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradnextjs-tutorial" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E40AF" />
+        <stop offset="100%" stop-color="#3B82F6" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradnextjs-tutorial)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="813.765079411225" cy="139.2725021962932" r="92.5491951190841" fill="white" /><circle cx="432.76574082992283" cy="253.71464763087624" r="36.083796017327856" fill="white" /><circle cx="1007.4260903858553" cy="608.1512947275295" r="51.02577634376271" fill="white" /><circle cx="682.6893925549609" cy="193.58053355527252" r="31.405266826443956" fill="white" /><circle cx="221.42582707602088" cy="593.2908887010366" r="47.269207610692696" fill="white" /><circle cx="1189.7504283562282" cy="474.0168060397905" r="30.93838119787657" fill="white" /><circle cx="32.78527082051568" cy="261.09982744709833" r="77.0483105197019" fill="white" /><circle cx="359.57316261319136" cy="421.087365592722" r="53.528201322815164" fill="white" /><circle cx="1017.4052748301864" cy="441.2661470272221" r="50.41741575288686" fill="white" /><circle cx="451.9047020772959" cy="668.9276366675887" r="43.61246094948625" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">Complete Next.js Tutorial</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">Complete Next.js Tutorial</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="white" />
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="#1E40AF" />
+    </g>
+  </svg>

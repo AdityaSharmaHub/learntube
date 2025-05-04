@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradgraphql-api" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BE185D" />
+        <stop offset="100%" stop-color="#EC4899" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradgraphql-api)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="1126.8223465597212" cy="424.40527680123967" r="60.731849295078995" fill="white" /><circle cx="1205.5822596979658" cy="470.9491106119484" r="92.4378842723923" fill="white" /><circle cx="487.5372512592085" cy="419.7312992419802" r="59.809260810550896" fill="white" /><circle cx="805.8940574222339" cy="710.7266924876336" r="80.09082428476353" fill="white" /><circle cx="554.3173707383681" cy="531.571604622177" r="85.01469626349447" fill="white" /><circle cx="68.35195580372158" cy="356.36083348378963" r="21.21943894680097" fill="white" /><circle cx="651.1035152768358" cy="396.02228602642526" r="29.437800078575602" fill="white" /><circle cx="1122.0619884610426" cy="436.94252539674255" r="46.00955158615065" fill="white" /><circle cx="349.665611719189" cy="174.35947911920118" r="28.691753288732986" fill="white" /><circle cx="756.6184529570535" cy="150.3744844212623" r="54.27414713551489" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">GraphQL API Development</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">GraphQL API Development</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M12 5.5L5 10l7 4.5 7-4.5-7-4.5m9 4.5a2 2 0 012 2v5a2 2 0 01-2 2h-7v-2h7v-5H8.93l-3-2H3a2 2 0 00-2 2v5a2 2 0 002 2h7v2H3a4 4 0 01-4-4v-5a4 4 0 014-4h18m-9-6a5.51 5.51 0 015.5 5.5h-2a3.5 3.5 0 00-3.5-3.5 3.5 3.5 0 00-3.5 3.5H7A5.51 5.51 0 0112 4z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M12 5.5L5 10l7 4.5 7-4.5-7-4.5m9 4.5a2 2 0 012 2v5a2 2 0 01-2 2h-7v-2h7v-5H8.93l-3-2H3a2 2 0 00-2 2v5a2 2 0 002 2h7v2H3a4 4 0 01-4-4v-5a4 4 0 014-4h18m-9-6a5.51 5.51 0 015.5 5.5h-2a3.5 3.5 0 00-3.5-3.5 3.5 3.5 0 00-3.5 3.5H7A5.51 5.51 0 0112 4z" fill="#BE185D"/>
+    </g>
+  </svg>

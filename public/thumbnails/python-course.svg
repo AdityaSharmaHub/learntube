@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradpython-course" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A8A" />
+        <stop offset="100%" stop-color="#3B82F6" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradpython-course)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="794.3145730704678" cy="590.6857744038344" r="69.0816385239146" fill="white" /><circle cx="369.312443041255" cy="512.7785563813734" r="68.65658909501882" fill="white" /><circle cx="1125.188568180797" cy="548.5731747531876" r="27.99727661807177" fill="white" /><circle cx="1046.0224984194824" cy="91.08403380264139" r="62.75664782220222" fill="white" /><circle cx="1047.2446404448206" cy="314.9258605076027" r="94.81685943465628" fill="white" /><circle cx="298.00517739995286" cy="644.0426892231948" r="34.322175484154215" fill="white" /><circle cx="1162.7339372809124" cy="435.07501957492184" r="99.31171953541073" fill="white" /><circle cx="570.305341153344" cy="487.1348307547264" r="80.39300078441094" fill="white" /><circle cx="913.4678427975609" cy="37.26377790038322" r="63.15932458530078" fill="white" /><circle cx="539.7712593333652" cy="245.97708148990475" r="20.737173514618572" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">Learn Python in 6 Hours</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">Learn Python in 6 Hours</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M9.8 13.4h1.9V12h-1.9M20 4H4a2 2 0 00-2 2v10a2 2 0 002 2h4l-1 2v1h10v-1l-1-2h4a2 2 0 002-2V6a2 2 0 00-2-2m0 12H4V6h16z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M9.8 13.4h1.9V12h-1.9M20 4H4a2 2 0 00-2 2v10a2 2 0 002 2h4l-1 2v1h10v-1l-1-2h4a2 2 0 002-2V6a2 2 0 00-2-2m0 12H4V6h16z" fill="#1E3A8A"/>
+    </g>
+  </svg>

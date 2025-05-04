@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <defs>
+      <linearGradient id="gradtypescript-tutorial" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0369A1" />
+        <stop offset="100%" stop-color="#0EA5E9" />
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#gradtypescript-tutorial)" />
+    
+    <!-- Background pattern -->
+    <g opacity="0.1">
+      <circle cx="577.655122688939" cy="185.92823501489522" r="97.77546679569784" fill="white" /><circle cx="1126.6199276796897" cy="325.3051255247576" r="95.57532679930418" fill="white" /><circle cx="803.1785791281374" cy="589.0380335198993" r="44.48032024765865" fill="white" /><circle cx="861.9735739938665" cy="678.7502067759322" r="64.40208267978456" fill="white" /><circle cx="524.4818256194608" cy="548.7350018755692" r="26.37841938398811" fill="white" /><circle cx="670.7802303641633" cy="550.8979498637747" r="94.37307030054376" fill="white" /><circle cx="116.81155770384663" cy="417.4703778786124" r="35.593840585486554" fill="white" /><circle cx="1277.866417234743" cy="597.9954619048134" r="57.611573462973844" fill="white" /><circle cx="1256.1409521096562" cy="650.2867176788286" r="21.966649080856318" fill="white" /><circle cx="614.3335888536188" cy="392.29259220337696" r="47.958056063209526" fill="white" />
+    </g>
+    
+    <!-- Title with shadow -->
+    <g transform="translate(640, 400)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="black" text-anchor="middle" opacity="0.3" filter="url(#shadow)" dominant-baseline="middle">TypeScript Tutorial for Beginners</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="44" fill="white" text-anchor="middle" dominant-baseline="middle">TypeScript Tutorial for Beginners</text>
+    </g>
+    
+    <!-- Play button with shadow -->
+    <g transform="translate(640, 280)">
+      <circle cx="0" cy="0" r="70" fill="black" opacity="0.3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="70" fill="rgba(0,0,0,0.5)" />
+      <path d="M3 3h18v18H3V3m10.71 14.29c.18.19.43.3.7.3a1.003 1.003 0 00.7-1.717 1 1 0 00-1.41 1.41M11 14h2v-3h3V9h-3V6h-2v3H8v2h3v3m1-9a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8z" fill="white"/>
+    </g>
+    
+    <!-- Watermark/icon in corner -->
+    <g transform="translate(50, 50)" opacity="0.7">
+      <rect width="40" height="40" rx="5" fill="white" />
+      <path d="M3 3h18v18H3V3m10.71 14.29c.18.19.43.3.7.3a1.003 1.003 0 00.7-1.717 1 1 0 00-1.41 1.41M11 14h2v-3h3V9h-3V6h-2v3H8v2h3v3m1-9a8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8z" fill="#0369A1"/>
+    </g>
+  </svg>
