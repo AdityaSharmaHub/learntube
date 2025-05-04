@@ -11,22 +11,6 @@ import ChapterMarkers from "@/components/learning/ChapterMarkers";
 import QuizPanel from "@/components/learning/QuizPanel";
 import NotesPanel from "@/components/learning/NotesPanel";
 
-// Declare global YouTube Player API
-declare global {
-  interface Window {
-    YT: {
-      Player: any;
-      PlayerState: {
-        PLAYING: number;
-        PAUSED: number;
-        ENDED: number;
-      };
-      ready: boolean;
-    };
-    onYouTubeIframeAPIReady: () => void;
-  }
-}
-
 export default function VideoPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const video = videos.find((v) => v.id === id);
@@ -75,7 +59,7 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
     
     return () => {
       if (typeof window !== 'undefined') {
-        window.onYouTubeIframeAPIReady = null;
+        window.onYouTubeIframeAPIReady = undefined;
       }
     };
   }, []);
@@ -97,8 +81,8 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
         if (typeof playerRef.current.destroy === 'function') {
           playerRef.current.destroy();
         }
-      } catch (e) {
-        console.error("Error destroying player:", e);
+      } catch (error) {
+        console.error("Error destroying player:", error);
       }
       playerRef.current = null;
     }
@@ -133,8 +117,8 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
       if (playerRef.current && typeof playerRef.current.destroy === 'function') {
         try {
           playerRef.current.destroy();
-        } catch (e) {
-          console.error("Error destroying player:", e);
+        } catch (error) {
+          console.error("Error destroying player:", error);
         }
       }
       
@@ -144,31 +128,38 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
         return;
       }
       
+      // Define PlayerState constants to make the code more readable
+      const PlayerState = {
+        PLAYING: 1,
+        PAUSED: 2,
+        ENDED: 0
+      };
+      
       // Create new player instance
       playerRef.current = new window.YT.Player('youtube-player', {
         videoId: youtubeId,
         events: {
-          onReady: (event) => {
+          onReady: (event: any) => {
             console.log('Player ready for video:', youtubeId);
             playerRef.current = event.target;
-            console.log("Player methods:", Object.keys(playerRef.current));
+            console.log("Player methods:", playerRef.current);
             if (typeof playerRef.current.getCurrentTime === 'function') {
               setCurrentTime(playerRef.current.getCurrentTime());
             }
           },
-          onStateChange: (event) => {
+          onStateChange: (event: any) => {
             // YT.PlayerState: PLAYING (1), PAUSED (2), etc.
-            if (event.data === 1) { // Playing
+            if (event.data === PlayerState.PLAYING) { // Playing
               setIsPlaying(true);
-              if (typeof playerRef.current.getCurrentTime === 'function') {
+              if (playerRef.current && typeof playerRef.current.getCurrentTime === 'function') {
                 setCurrentTime(playerRef.current.getCurrentTime());
               }
-            } else if (event.data === 2 || event.data === 0) { // Paused or Ended
+            } else if (event.data === PlayerState.PAUSED || event.data === PlayerState.ENDED) { // Paused or Ended
               setIsPlaying(false);
             }
           },
-          onError: (e) => {
-            console.error('YouTube player error:', e);
+          onError: (event: any) => {
+            console.error('YouTube player error:', event.data);
           }
         },
         playerVars: {
@@ -195,8 +186,8 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
           try {
             const time = playerRef.current.getCurrentTime();
             setCurrentTime(time);
-          } catch (e) {
-            console.error("Error getting current time:", e);
+          } catch (error) {
+            console.error("Error getting current time:", error);
           }
         }
       }, 500);
@@ -252,8 +243,8 @@ export default function VideoPage({ params }: { params: Promise<{ id: string }> 
           }
         }
       }, 100);
-    } catch (e) {
-      console.error("Error seeking to time:", e);
+    } catch (error) {
+      console.error("Error seeking to time:", error);
     }
   };
 
