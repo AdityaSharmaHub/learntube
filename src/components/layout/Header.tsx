@@ -2,7 +2,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  sidebarVisible: boolean;
+  toggleSidebar: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ sidebarVisible, toggleSidebar }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   const toggleMobileMenu = () => {
@@ -16,7 +21,8 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4">
           <button 
             className="p-2 rounded-full hover:bg-gray-200"
-            onClick={toggleMobileMenu}
+            onClick={toggleSidebar}
+            aria-label="Toggle sidebar"
           >
             <svg viewBox="0 0 24 24" className="w-6 h-6">
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
