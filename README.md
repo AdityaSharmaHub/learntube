@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LearnTube v2 🎓
 
-## Getting Started
+<div align="center">
+  <img src="public/learntube-logo.png" alt="LearnTube Logo" width="250"/>
+  <p><em>Transform YouTube videos into interactive learning experiences</em></p>
+  
+  [![Hackathon Project](https://img.shields.io/badge/Hackathon-Vibe%20Coding-8A2BE2)](https://vibecoding.com)
+  [![Next.js](https://img.shields.io/badge/Next.js-13.5-black)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+  [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+</div>
 
-First, run the development server:
+## 🌟 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**LearnTube v2** reimagines how we learn from YouTube videos by transforming passive watching into an active, educational experience. Created for the **Level Up: Vibe Coding Hackathon**, this platform adds powerful learning tools directly alongside YouTube content, making educational videos significantly more effective.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> 💡 **The Problem**: YouTube has amazing educational content, but lacks learning-specific features. Learners constantly switch between the video and note-taking apps, losing context and focus.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> 🚀 **Our Solution**: LearnTube v2 integrates learning tools directly with YouTube videos in a thoughtfully designed interface that maximizes learning effectiveness.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<div align="center">
+  <img src="public/screenshots/learning-mode.png" alt="LearnTube v2 Learning Mode" width="800"/>
+  <p><em>LearnTube v2's Learning Mode with video playback and interactive learning tools</em></p>
+</div>
 
-## Learn More
+## ✨ Key Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🎓 Learning Mode
+- **Split-view Interface**: Watch videos and interact with learning tools simultaneously
+- **Toggle**: Switch between standard YouTube experience and Learning Mode with one click
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📝 Enhanced Note-Taking
+- **Timestamped Notes**: Automatically associate notes with video timestamps
+- **Quick Insert**: Add the current timestamp to your note with one click
+- **Jump-to-Timestamp**: Click any note's timestamp to navigate to that part of the video
+- **Export Options**: Save notes in multiple formats (Text, HTML, JSON)
+- **Organization**: Sort notes by timestamp or creation date
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📊 Interactive Quizzes
+- **Time-Based Delivery**: Quizzes appear at relevant points in the video
+- **Immediate Feedback**: Learn from explanations for incorrect answers
+- **Progress Tracking**: See scores and completion status
+- **Notifications**: Be alerted when new quizzes become available
 
-## Deploy on Vercel
+### 📑 Chapter Navigation
+- **Visual Timeline**: Navigate video content by sections and topics
+- **Quick Access**: Jump to specific parts of the video with one click
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎮 User Experience
+- **YouTube-Style UI**: Familiar interface that builds on YouTube's design language
+- **Responsive Layout**: Works on desktop and tablet devices
+- **Persistent State**: Your notes and progress are saved automatically
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technologies
+
+- **Frontend Framework**: Next.js 13 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Video Integration**: YouTube iFrame API
+- **State Management**: React Context API
+- **Data Persistence**: LocalStorage (with JSON serialization)
+
+## 📷 Screenshots
+
+<div align="center">
+  <img src="public/screenshots/standard-mode.png" alt="Standard Mode" width="400"/>
+  <img src="public/screenshots/quiz-notification.png" alt="Quiz Notification" width="400"/>
+  <p><em>Left: Standard video viewing mode. Right: Quiz notification appears during video.</em></p>
+  
+  <img src="public/screenshots/note-taking.png" alt="Note Taking Interface" width="400"/>
+  <img src="public/screenshots/quiz-results.png" alt="Quiz Results" width="400"/>
+  <p><em>Left: Note-taking interface with timestamp insertion. Right: Quiz results with explanations.</em></p>
+</div>
+
+## 🚀 Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/learntube-v2.git
+   cd learntube-v2
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+
+## 🏆 Hackathon Submission
+
+This project was created for the **Level Up: Vibe Coding Hackathon** with the goal of reimagining how educational content can be delivered on the web. LearnTube v2 demonstrates:
+
+- **Innovation**: Seamlessly integrates learning tools with video content
+- **Technical Excellence**: Clean architecture and smooth YouTube API integration
+- **UX Focus**: Intuitive design that solves real user problems
+- **Educational Value**: Transforms passive content into active learning
+- **Completeness**: Fully functional prototype with polished features
+
+## 📈 Future Roadmap
+
+- **AI-Generated Quizzes**: Automatically create quizzes from video content
+- **Collaborative Notes**: Share and collaborate on notes with classmates
+- **Spaced Repetition**: Smart review system for better knowledge retention
+- **Custom Courses**: Organize multiple videos into structured courses
+- **Mobile App**: Native mobile experience for on-the-go learning
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- **Vibe Coding Hackathon** for the inspiration and opportunity
+- **Educational YouTube Creators** who make learning accessible to everyone
+- **Open Source Community** for the amazing tools that made this project possible
+
+---
+
+<div align="center">
+  <p>Built with ❤️ for learners everywhere</p>
+  <a href="https://github.com/yourusername/learntube-v2/issues">Report Bug</a> ·
+  <a href="https://github.com/yourusername/learntube-v2/issues">Request Feature</a>
+</div>
