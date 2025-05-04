@@ -1,7 +1,7 @@
-# LearnTube v2 🎓
+# LearnTube 🎓
 
 <div align="center">
-  <img src="public/learntube-logo.png" alt="LearnTube Logo" width="250"/>
+  <img src="public/learntube.png" alt="LearnTube Logo" width="250"/>
   <p><em>Transform YouTube videos into interactive learning experiences</em></p>
   
   [![Hackathon Project](https://img.shields.io/badge/Hackathon-Vibe%20Coding-8A2BE2)](https://vibecoding.com)
@@ -12,15 +12,15 @@
 
 ## 🌟 Overview
 
-**LearnTube v2** reimagines how we learn from YouTube videos by transforming passive watching into an active, educational experience. Created for the **Level Up: Vibe Coding Hackathon**, this platform adds powerful learning tools directly alongside YouTube content, making educational videos significantly more effective.
+**LearnTube** reimagines how we learn from YouTube videos by transforming passive watching into an active, educational experience. Created for the **Level Up: Vibe Coding Hackathon**, this platform adds powerful learning tools directly alongside YouTube content, making educational videos significantly more effective.
 
 > 💡 **The Problem**: YouTube has amazing educational content, but lacks learning-specific features. Learners constantly switch between the video and note-taking apps, losing context and focus.
 
-> 🚀 **Our Solution**: LearnTube v2 integrates learning tools directly with YouTube videos in a thoughtfully designed interface that maximizes learning effectiveness.
+> 🚀 **Our Solution**: LearnTube integrates learning tools directly with YouTube videos in a thoughtfully designed interface that maximizes learning effectiveness.
 
 <div align="center">
-  <img src="public/screenshots/learning-mode.png" alt="LearnTube v2 Learning Mode" width="800"/>
-  <p><em>LearnTube v2's Learning Mode with video playback and interactive learning tools</em></p>
+  <img src="public/screenshots/learning-mode.png" alt="LearnTube Learning Mode" width="800"/>
+  <p><em>LearnTube's Learning Mode with video playback and interactive learning tools</em></p>
 </div>
 
 ## ✨ Key Features
@@ -53,7 +53,7 @@
 
 ## 🛠️ Technologies
 
-- **Frontend Framework**: Next.js 13 (App Router)
+- **Frontend Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Animation**: Framer Motion
@@ -77,8 +77,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/learntube-v2.git
-   cd learntube-v2
+   git clone https://github.com/adityasharmahub/learntube.git
+   cd learntube
    ```
 
 2. **Install dependencies**
@@ -99,7 +99,7 @@
 
 ## 🏆 Hackathon Submission
 
-This project was created for the **Level Up: Vibe Coding Hackathon** with the goal of reimagining how educational content can be delivered on the web. LearnTube v2 demonstrates:
+This project was created for the **Level Up: Vibe Coding Hackathon** with the goal of reimagining how educational content can be delivered on the web. LearnTube demonstrates:
 
 - **Innovation**: Seamlessly integrates learning tools with video content
 - **Technical Excellence**: Clean architecture and smooth YouTube API integration
@@ -115,10 +115,6 @@ This project was created for the **Level Up: Vibe Coding Hackathon** with the go
 - **Custom Courses**: Organize multiple videos into structured courses
 - **Mobile App**: Native mobile experience for on-the-go learning
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgements
 
 - **Vibe Coding Hackathon** for the inspiration and opportunity
@@ -129,6 +125,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <p>Built with ❤️ for learners everywhere</p>
-  <a href="https://github.com/yourusername/learntube-v2/issues">Report Bug</a> ·
-  <a href="https://github.com/yourusername/learntube-v2/issues">Request Feature</a>
+  <a href="https://github.com/adityasharmahub/learntube/issues">Report Bug</a> ·
+  <a href="https://github.com/adityasharmahub/learntube/issues">Request Feature</a>
 </div>
