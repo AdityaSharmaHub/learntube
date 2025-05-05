@@ -61,6 +61,13 @@
 - **State Management**: React Context API
 - **Data Persistence**: LocalStorage (with JSON serialization)
 
+## 🎥 Demo Video
+
+
+https://github.com/user-attachments/assets/7524c1e1-c4ab-441b-8441-fba054ab3e2e
+
+
+
 ## 📷 Screenshots
 
 <div align="center">
