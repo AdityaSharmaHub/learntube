@@ -18,6 +18,9 @@
 
 > 🚀 **Our Solution**: LearnTube integrates learning tools directly with YouTube videos in a thoughtfully designed interface that maximizes learning effectiveness.
 
+> 🔗 🎥 [Watch Demo](https://github.com/user-attachments/assets/7524c1e1-c4ab-441b-8441-fba054ab3e2e) — See it in action before diving in!
+
+
 <div align="center">
   <img src="public/screenshots/learning-mode.png" alt="LearnTube Learning Mode" width="800"/>
   <p><em>LearnTube's Learning Mode with video playback and interactive learning tools</em></p>
